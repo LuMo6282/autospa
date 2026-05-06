@@ -1,0 +1,16 @@
+# preview / debug artifacts
+.playwright-mcp/
+*.png
+!favicon*.png
+!og*.png
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# node (in case we add tooling later)
+node_modules/
+.env
+.env.local
