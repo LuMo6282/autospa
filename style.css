@@ -605,6 +605,80 @@ section h2 em {
   margin-bottom: 4px;
 }
 
+/* =================== LOGISTICS =================== */
+
+.how-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.how-list > li {
+  position: relative;
+  padding: 32px 28px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.how-list > li + li { border-left: 1px dashed var(--line-soft); }
+
+.how-list .step {
+  font-family: var(--font-script);
+  font-weight: 700;
+  font-size: 38px;
+  color: var(--red);
+  line-height: 1;
+  transform: rotate(-6deg);
+  flex-shrink: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.6);
+}
+.how-list h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 420;
+  font-variation-settings: "opsz" 60, "SOFT" 80, "wght" 420;
+  color: var(--ink);
+  margin-bottom: 10px;
+  letter-spacing: -.005em;
+}
+.how-price {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--teal-deep);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+.how-price em {
+  font-style: normal;
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 400;
+  opacity: .85;
+}
+.how-desc {
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.5;
+  max-width: 32ch;
+}
+
+@media (max-width: 900px) {
+  .how-list { grid-template-columns: 1fr; }
+  .how-list > li + li { border-left: 0; border-top: 1px dashed var(--line-soft); }
+  .how-list > li { padding: 26px 4px; }
+}
+
 /* =================== ABOUT =================== */
 
 .about {
